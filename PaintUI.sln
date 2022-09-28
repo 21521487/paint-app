@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintUI", "PaintUI\PaintUI.csproj", "{5620C159-E994-4B2E-A4F9-2AE6DBA32BDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19656707-E65C-40E4-A0AD-70F7D2E1D6F0}"
+	ProjectSection(SolutionItems) = preProject
+		..\PaintAppTest1\PaintAppTest1\App.xaml = ..\PaintAppTest1\PaintAppTest1\App.xaml
+		..\PaintAppTest1\PaintAppTest1\MainWindow.xaml = ..\PaintAppTest1\PaintAppTest1\MainWindow.xaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5620C159-E994-4B2E-A4F9-2AE6DBA32BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5620C159-E994-4B2E-A4F9-2AE6DBA32BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5620C159-E994-4B2E-A4F9-2AE6DBA32BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5620C159-E994-4B2E-A4F9-2AE6DBA32BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0043F91-B835-4B4F-89C1-6BEDD591921E}
+	EndGlobalSection
+EndGlobal
