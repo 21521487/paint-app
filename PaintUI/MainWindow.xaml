@@ -315,16 +315,13 @@
                     </Canvas>
                 </Grid>
             </ScrollViewer>
-            
 
         </StackPanel>
         
         <!--Information & zoom-->
-        <StackPanel Background="#f3f3f3" 
-                    Width="auto" Height="50" 
-                    VerticalAlignment="Bottom">
-
-        </StackPanel>
+        <StatusBar Height="30" VerticalAlignment="Bottom">
+            
+        </StatusBar>
     </Grid>
     
 </Window>
