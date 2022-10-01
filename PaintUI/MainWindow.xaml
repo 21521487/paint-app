@@ -8,11 +8,11 @@
         Title="EasyVP Paint" Height="700" Width="1100"
         Icon="images/icon.png"
         TextOptions.TextFormattingMode="Display">
-    <Grid>
-        <StackPanel Orientation="Vertical" Background="#f8f8f8">
+    <DockPanel LastChildFill="True">
+        <DockPanel  Background="#f8f8f8" Grid.ColumnSpan="2" DockPanel.Dock="Top">
 
             <!--Menu bar-->
-            <Menu Style="{StaticResource menuBarStyle}">
+            <Menu DockPanel.Dock="Top" Style="{StaticResource menuBarStyle}">
                 <Menu.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel Orientation="Horizontal"/>
@@ -35,35 +35,35 @@
             </Menu>
 
             <!--Toolbar-->
-            <Border BorderThickness="1" BorderBrush="#ebebeb">
+            <Border VerticalAlignment="Top" Height="118.5" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#ebebeb">
                 <StackPanel Orientation="Horizontal" Background="#f9f9f9"
-                        VerticalAlignment="Top"
-                        Height="117.5">
+                    VerticalAlignment="Top"
+                    Height="117.5">
                     <!--Clipboard-->
 
                     <Grid Height="120" Width="104">
                         <TextBlock Style="{StaticResource toolbarTxblStyle}"
-                           Text="Clipboard"/>
+                        Text="Clipboard"/>
 
                         <Image Style="{StaticResource toolBarImageStyle}" 
-                           Source="images/tool-bar/clipboard/copy.png"
-                           HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                           Margin="0 0 15 34"
-                           >
+                        Source="images/tool-bar/clipboard/copy.png"
+                        HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                        Margin="0 0 15 34"
+                        >
 
                         </Image>
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/tool-bar/clipboard/paste.png"
-                           HorizontalAlignment="Left" VerticalAlignment="Center"
-                           Margin="16 0 0 20">
+                        Source="images/tool-bar/clipboard/paste.png"
+                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                        Margin="16 0 0 20">
 
                         </Image >
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/tool-bar/clipboard/cut.png"
-                           HorizontalAlignment="Right" VerticalAlignment="Top"
-                           Margin="0 20 15 0">
+                        Source="images/tool-bar/clipboard/cut.png"
+                        HorizontalAlignment="Right" VerticalAlignment="Top"
+                        Margin="0 20 15 0">
 
                         </Image>
 
@@ -73,34 +73,34 @@
                     <!--Image-->
                     <Grid Height="120" Width="151">
                         <TextBlock Style="{StaticResource toolbarTxblStyle}"
-                               Text="Image"/>
+                            Text="Image"/>
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/tool-bar/image/select.png"
-                           HorizontalAlignment="Left" VerticalAlignment="Center"
-                           Margin="12 0 0 15"
-                           Width="30"
-                           />
+                        Source="images/tool-bar/image/select.png"
+                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                        Margin="12 0 0 15"
+                        Width="30"
+                        />
 
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/tool-bar/image/resize.png"
-                           HorizontalAlignment="Center" VerticalAlignment="Center"
-                           Margin="0 0 10 15"
-                           Width="38"
-                           />
+                        Source="images/tool-bar/image/resize.png"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Margin="0 0 10 15"
+                        Width="38"
+                        />
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/tool-bar/image/flip.png"
-                           HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                           Margin="0 0 30 35"
-                           Width="22"/>
+                        Source="images/tool-bar/image/flip.png"
+                        HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                        Margin="0 0 30 35"
+                        Width="22"/>
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/tool-bar/image/rotate.png"
-                           HorizontalAlignment="Right" VerticalAlignment="Top"
-                           Margin="0 20 30 0"
-                           Width="24"/>
+                        Source="images/tool-bar/image/rotate.png"
+                        HorizontalAlignment="Right" VerticalAlignment="Top"
+                        Margin="0 20 30 0"
+                        Width="24"/>
 
 
                     </Grid>
@@ -111,7 +111,7 @@
                     <!--Tools-->
                     <Grid Height="120" Width="136">
                         <TextBlock Style="{StaticResource toolbarTxblStyle}"
-                               Text="Tools">
+                            Text="Tools">
 
                         </TextBlock>
                     </Grid>
@@ -120,7 +120,7 @@
                     <!--Shapes-->
                     <Grid Height="120" Width="276">
                         <TextBlock Style="{StaticResource toolbarTxblStyle}"
-                               Text="Shapes">
+                            Text="Shapes">
 
                         </TextBlock>
                     </Grid>
@@ -129,14 +129,14 @@
                     <!--Size-->
                     <Grid Height="120" Width="56">
                         <TextBlock Style="{StaticResource toolbarTxblStyle}"
-                               Text="Size"/>
+                            Text="Size"/>
 
                         <Image Style="{StaticResource toolBarImageStyle}"
-                           Source="images/size/size.png" 
-                           VerticalAlignment="Top" HorizontalAlignment="Center"
-                           Margin="0 30 0 0"
-                           Width="40"
-                           />
+                        Source="images/size/size.png" 
+                        VerticalAlignment="Top" HorizontalAlignment="Center"
+                        Margin="0 30 0 0"
+                        Width="40"
+                        />
 
                     </Grid>
                     <Line Style="{StaticResource toolBarSeparateLineStyle}"/>
@@ -144,9 +144,9 @@
                     <!--Colors-->
                     <DockPanel>
                         <TextBlock Style="{StaticResource toolbarTxblStyle}"
-                               Text="Colors" 
-                               Margin="0 0 0 10"
-                               DockPanel.Dock="Bottom">
+                            Text="Colors" 
+                            Margin="0 0 0 10"
+                            DockPanel.Dock="Bottom">
 
                         </TextBlock>
                         <!--Current Drawing Color (Left and right mouse)-->
@@ -154,36 +154,36 @@
                             <!--Right Click Color-->
 
                             <Border x:Name="leftClickColorBorder"
-                                BorderThickness="1" BorderBrush="#a07a92" 
-                                Width="30" Height="30" CornerRadius="15"
-                                VerticalAlignment="Top"
-                                Margin="15 9 0 0"
-                                RenderOptions.BitmapScalingMode="HighQuality"
-                                Visibility="Visible">
+                            BorderThickness="1" BorderBrush="#a07a92" 
+                            Width="30" Height="30" CornerRadius="15"
+                            VerticalAlignment="Top"
+                            Margin="15 9 0 0"
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            Visibility="Visible">
                             </Border>
 
                             <Border x:Name="rightClickColorBorder"
-                                BorderThickness="1" BorderBrush="#a07a92" 
-                                Width="30" Height="30" CornerRadius="15"
-                                VerticalAlignment="Bottom"
-                                Margin="15 0 0 9"
-                                RenderOptions.BitmapScalingMode="HighQuality"
-                                Visibility="Hidden">
+                            BorderThickness="1" BorderBrush="#a07a92" 
+                            Width="30" Height="30" CornerRadius="15"
+                            VerticalAlignment="Bottom"
+                            Margin="15 0 0 9"
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            Visibility="Hidden">
                             </Border>
 
                             <Ellipse x:Name="rightClickColor"
-                                 Fill="Black"
-                                 VerticalAlignment="Top"
-                                 Stroke="Transparent"
-                                 Margin="15 12 0 0"
-                                 Style="{StaticResource ResourceKey=currentcolorEllipseStyle}"/>
+                                Fill="Black"
+                                VerticalAlignment="Top"
+                                Stroke="Transparent"
+                                Margin="15 12 0 0"
+                                Style="{StaticResource ResourceKey=currentcolorEllipseStyle}"/>
 
                             <!--Left Click Color-->
                             <Ellipse x:Name="leftClickColor"
-                                 Fill="White"
-                                 VerticalAlignment="Bottom"
-                                 Margin="15 8 0 12"
-                                 Style="{StaticResource ResourceKey=currentcolorEllipseStyle}"/>
+                                Fill="White"
+                                VerticalAlignment="Bottom"
+                                Margin="15 8 0 12"
+                                Style="{StaticResource ResourceKey=currentcolorEllipseStyle}"/>
 
                         </Grid>
 
@@ -191,137 +191,148 @@
                         <StackPanel Orientation="Vertical">
                             <!--Line Color 1-->
                             <StackPanel  Orientation="Horizontal"
-                            Margin="20 3 0 0">
+                        Margin="20 3 0 0">
 
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Black"
-                            />
+                                    Fill="Black"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Gray"
-                            />
+                                    Fill="Gray"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="DarkRed"
-                            />
+                                    Fill="DarkRed"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Red"
-                            />
+                                    Fill="Red"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Orange"
-                            />
+                                    Fill="Orange"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Yellow"
-                            />
+                                    Fill="Yellow"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Green"
-                            />
+                                    Fill="Green"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Turquoise"
-                            />
+                                    Fill="Turquoise"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Indigo"
-                            />
+                                    Fill="Indigo"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Purple"
-                            />
+                                    Fill="Purple"
+                        />
 
                             </StackPanel>
 
                             <!--Line Color 2-->
                             <StackPanel Orientation="Horizontal"
-                            Margin="20 3 0 0">
+                        Margin="20 3 0 0">
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="LightGray"
-                            />
+                                    Fill="LightGray"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Brown"
-                            />
+                                    Fill="Brown"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="#ffaec9"
-                            />
+                                    Fill="#ffaec9"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Gold"
-                            />
+                                    Fill="Gold"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="LightYellow"
-                            />
+                                    Fill="LightYellow"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Lime"
-                            />
+                                    Fill="Lime"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="#99d9ea"
-                            />
+                                    Fill="#99d9ea"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="#7092be"
-                            />
+                                    Fill="#7092be"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="Lavender"
-                            />
+                                    Fill="Lavender"
+                        />
 
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                            Margin="20 3 0 0">
+                        Margin="20 3 0 0">
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                                 <Ellipse Style="{StaticResource ResourceKey=colorEllipseStyle}"
-                                     Fill="White"
-                            />
+                                    Fill="White"
+                        />
                             </StackPanel>
                         </StackPanel>
                     </DockPanel>
-                    
+
                 </StackPanel>
             </Border>
 
+
+
+
+        </DockPanel>
+
+
+
+        <DockPanel VerticalAlignment="Bottom"
+                   LastChildFill="True" Grid.ColumnSpan="2"
+                   DockPanel.Dock="Top">
+
+            <!--Information & zoom-->
+            <StatusBar DockPanel.Dock="Bottom"
+                       Background="#f3f3f3"
+                       Height="30" VerticalAlignment="Bottom">
+            </StatusBar>
+
             <!--Drawing canvas-->
-            <ScrollViewer Height="850"
+            <ScrollViewer DockPanel.Dock="Bottom"
                           ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                          ScrollViewer.VerticalScrollBarVisibility="Visible"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Background="#f0f0f0" Template="{StaticResource ScrollViewerDrawingArea}"
                           >
-                <Grid Height="900" Background="#f8f8f8"
-              Width="3000">
-                    <Canvas Width="900" Height="500" Background="White" 
-                HorizontalAlignment="Left" VerticalAlignment="Top"
-                Margin="35 35 0 0">
+                <Grid Background="#f8f8f8" Width="2000" Height="1000">
+                    <Canvas x:Name="drawingCanvas"
+                            Width="900" Height="500" Background="White" 
+                            HorizontalAlignment="Left" VerticalAlignment="Top"
+                            Margin="35 35 0 0">
 
                     </Canvas>
                 </Grid>
             </ScrollViewer>
-
-        </StackPanel>
-        
-        <!--Information & zoom-->
-        <StatusBar Height="30" VerticalAlignment="Bottom">
-            
-        </StatusBar>
-    </Grid>
-    
+        </DockPanel>
+    </DockPanel>
 </Window>
