@@ -333,6 +333,17 @@
                     </Canvas>
                 </Grid>
             </ScrollViewer>
+<<<<<<< Updated upstream
         </DockPanel>
     </DockPanel>
+=======
+
+        </StackPanel>
+        
+        <!--Information & zoom-->
+        <StatusBar Height="30" VerticalAlignment="Bottom">
+        </StatusBar>
+    </Grid>
+    
+>>>>>>> Stashed changes
 </Window>
